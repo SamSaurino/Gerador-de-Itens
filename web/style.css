@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Beleren;
+    src: url(/Fontes/typeface-beleren-bold-master/Beleren2016-Bold.woff)
+}
+
+body {
+    background-color: rgb(77, 77, 77);
+    font-family: Beleren;
+}
+
+span {
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + span {
+    color: goldenrod
+}
+
+#display {
+    background-color: goldenrod;
+    height: 200px;
+    border: 2px solid black;
+}
+
+button {
+    background-color: goldenrod;
+    color: black;
+    outline: none;
+    height: 100px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: rgb(241, 180, 24);
+}
+
+#botoes {
+    height: 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+
+.container {
+    padding: 20px;
+}
